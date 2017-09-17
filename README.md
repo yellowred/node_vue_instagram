@@ -5,12 +5,13 @@ SPA to browse instagram feed
 
 Requirements: docker-ce, nodejs 8+, linux.
 
-1. Start the environment `docker-compose up -d`.
-2. Run the server `npm run dev`.
-3. Import fresh posts `node scripts/import_fresh.js`.
-4. Browse the web site `http://localhost:8080/#/fresh`.
-5. Publish to Featured `node scripts/publish_featured.js`.
-6. Check the Featured section `http://localhost:8080/#/featured`.
+1. Create new docker machine `docker-machine create -d virtualbox --virtualbox-hostonly-cidr 192.168.10.1/24 --virtualbox-memory '1024' --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --engine-install-url https://raw.githubusercontent.com/SvenDowideit/install-docker/5896b863698967df0738976d6ee98efc5d4637ae/1.12.6.sh spa-sandbox`
+2. Build and run the environment `docker-compose up -d`.
+3. Run the server `npm run dev`.
+4. Import fresh posts `node scripts/import_fresh.js`.
+5. Browse the web site `http://localhost:8080/#/fresh`.
+6. Publish to Featured `node scripts/publish_featured.js`.
+7. Check the Featured section `http://localhost:8080/#/featured`.
 
 ## Architecture
 
