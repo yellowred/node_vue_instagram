@@ -19,7 +19,7 @@ const publishToFeatured = async () => {
   for (let item of queue) {
     const post = await db.collection('fresh').findOne({id: item.id})
     if (post) {
-      post.featured_date = item.featured_date
+      post.featured_time = item.featured_time
       await db.collection('featured').findAndModify(
         { id: post.id },
         [],
