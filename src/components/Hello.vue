@@ -21,9 +21,11 @@
 </template>
 
 <script>
+console.log('hello1', this.$store)
 export default {
   name: 'hello',
   data () {
+    console.log('hello', this.$store)
     return {
       msg: 'Welcome to Your Vue.js App'
     }
