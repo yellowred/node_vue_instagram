@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-const BACKEND_URL = 'http://192.168.10.100:3000'
+var BACKEND_URL = 'http://192.168.10.100:3000'
 
 
 export function fetchByType (type) {
